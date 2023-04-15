@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "bf9e67ca-8a21-4d06-8b9d-009aed3496d9",
+		"name": "project_microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8609375"
+	},
+	"item": [
+		{
+			"name": "Add project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"test_project\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/project",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/project",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"project"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
